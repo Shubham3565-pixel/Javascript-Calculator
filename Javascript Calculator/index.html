@@ -19,6 +19,7 @@
                 <td><button onclick="calculator(2)">Substract</button>
                 <td><button onclick="calculator(3)">Multiply</button>
                 <td><button onclick="calculator(4)">Devide</button>
+                <td><button onclick="calculator(5)">Clear</button>
             </tr>            
         </table>
     </div>
@@ -62,11 +63,17 @@
                 }
                 else
                 {
-                document.getElementById("result").value = y/x;
+                alert("First Value Should be Greater than Second.!!!");
                 }
             }
+            if(parseInt(n)==5)
+            {
+                document.getElementById("fname").value="";
+                document.getElementById("sname").value="";
+                document.getElementById("result").value="";
+            }
         }
-        }        
+        }   
     </script>
 </body>
 </html>
